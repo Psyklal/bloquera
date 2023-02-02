@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./vista/css/ejemplo_bloquera.css">
+    <link rel="shortcut icon" href="./vista/img/logo.png" type="image/png">
+
+
+    <title>Bloquera Vac S.A. de C.V. </title>
+</head>
+<body onload="ventanaRetroseso()">
+    <div class="contenedor_principal">
+        <div class="header">
+            <div class="columnas_header" id="contenedor_logo_header">
+                <img src="./vista/img/logo.png" id="img_logo_header" onclick="mostrarInicio()">
+                <div class="btn_logo_header"></div>
+            </div>
+            <div class="columnas_header" id="contededor_opciones_header">
+                <div class="btn_opcion_header" onclick="mostrarInicio()">
+                    <p class="p_opcion_header">Inicio</p>
+                </div>
+                <div class="btn_opcion_header" onclick="mostrarInfo()">
+                    <p class="p_opcion_header">¿Quienes somos?</p>
+               </div>
+                <div class="btn_opcion_header" onclick="mostrarCatalogo()">
+                    <p class="p_opcion_header">Catálogo</p>
+               </div>
+                <div class="btn_opcion_header">
+                    <p class="p_opcion_header">Bloquera Tips</p>
+               </div>
+                <div class="btn_opcion_header">
+                    <p class="p_opcion_header">Contacto</p>
+               </div>
+            </div>
+            <div class="columnas_header" id="contenedor_enlaces_header">
+                <div class="btn_enlace_header">
+                    <a target="_blank"  href="https://www.facebook.com/BloqueraVac">
+                        <img src="./vista/img/facebook.png" id="img_facebook_header">
+                    </a>
+                </div>
+                <div class="btn_enlace_header">
+                    <img src="./vista/img/instagram.png">
+                </div>
+                <div class="btn_enlace_header">
+                    <img src="./vista/img/whatsapp.png">
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo_contenido" id="cuerpo_contenido_inicio">
+            <div class="contenedor_carrusel" >
+                <div class="contenedor_img_carrusel" id="cont_primario_carrusel">
+                    <img class="img_carrusel" src="./vista/img/portada_uno.svg">
+                </div>
+                <div class="contenedor_img_carrusel" id="cont_secundario_carrusel">
+                    <img class="img_carrusel" src="./vista/img/carrusel_dos.svg">
+                </div>
+                <div class="contenedor_img_carrusel" id="cont_terciario_carrusel">
+                    <img class="img_carrusel" src="./vista/img/carrusel_tres.svg">
+                </div>
+            </div>
+            <div class="contenedor_botones_carrusel" id="barra_btn_cont_primario_carrusel">
+                <div class="barra_btn_carrusel">
+                    <div class="btn_carrusel" onclick="mostrarCarruselTerciario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_anterior.png">
+                    </div>
+                    <div class="cont_puntos_carrusel">
+                        <div  class="punto_carrusel" onclick="mostrarCarruselPrimario()" style="background-color: rgba(255, 255, 255, 0.193);">•</div>    
+                        <div  class="punto_carrusel" onclick="mostrarCarruselSecundario()">•</div>
+                        <div  class="punto_carrusel" onclick="mostrarCarruselTerciario()">•</div>    
+                    </div>
+                    <div class="btn_carrusel" onclick="mostrarCarruselSecundario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_siguiente.png">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_botones_carrusel" id="barra_btn_cont_secundario_carrusel">
+                <div class="barra_btn_carrusel">
+                    <div class="btn_carrusel" onclick="mostrarCarruselPrimario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_anterior.png">
+                    </div>
+                    <div class="cont_puntos_carrusel">
+                        <div class="punto_carrusel" onclick="mostrarCarruselPrimario()">•</div>    
+                        <div class="punto_carrusel" onclick="mostrarCarruselSecundario()" style="background-color: rgba(255, 255, 255, 0.193);">•</div>
+                        <div class="punto_carrusel" onclick="mostrarCarruselTerciario()">•</div>    
+                    </div>
+                    <div class="btn_carrusel" onclick="mostrarCarruselTerciario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_siguiente.png">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_botones_carrusel" id="barra_btn_cont_terciario_carrusel">
+                <div class="barra_btn_carrusel">
+                    <div class="btn_carrusel" onclick="mostrarCarruselSecundario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_anterior.png">
+                    </div>
+                    <div class="cont_puntos_carrusel">
+                        <div class="punto_carrusel" onclick="mostrarCarruselPrimario()">•</div>    
+                        <div class="punto_carrusel" onclick="mostrarCarruselSecundario()">•</div>
+                        <div class="punto_carrusel" onclick="mostrarCarruselTerciario()" style="background-color: rgba(255, 255, 255, 0.193);">•</div>    
+                    </div>
+                    <div class="btn_carrusel" onclick="mostrarCarruselPrimario()">
+                        <img class="img_btn_carrusel" src="./vista/img/flecha_siguiente.png">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="contenedor_cuerpo_texto">
+                <div class="contenedor_texto">
+                    <div class="objeto_texto">
+                        <p class="p_titulo">¿Por qué BLOQUERA VAC?</p>
+                    </div>
+                </div>
+                <div class="contenedor_texto" id="contenedor_texto_descripcion">
+                    <div class="objeto_texto">
+                        <p class="p_descripcion">Somos una bloquera enfocada en ofrecer servicios de calidad para una entera satisfacción de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_productos">
+                <div class="contenedor_objeto_producto" onclick="mostrarDescuentos()">
+                    <a href="#contenedor_ventana_secundaria_descuentos">
+                    <div class="cont_img_objeto_producto">
+                        <img class="img_producto" src="./vista/img/oferta_block.png">
+                    </div>
+                    </a>
+                    <div class="cont_texto_objeto_producto">
+                        <div class="objeto_texto_producto">
+                            <p class="p_titulo_producto">• Descuentos</p>
+                        </div>
+                        <div class="objeto_texto_producto">
+                            <p class="p_descripcion_producto">Por millar y tonelada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor_ventana" id="contenedor_ventana_secundaria_descuentos">
+                    <div class="ventana_secundaria_producto">
+                        <div class="cont_tabla_descuentos">
+                            <div class="contenedor_btn_cerrar">
+                                <div class="btn_cerrar" onclick="ocultarDescuentos()">
+                                    <img class="img_remove" src="./vista/img/remove.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos">DESCUENTO BLOCK X</p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos">DESCUENTO TABIQUE X</p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos"> DESCUENTO ADOCRETO X</p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos"> DESCUENTO VARILLA</p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos"></p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos"></p>
+                            </div>
+                            <div class="obj_tabla_descuentos">
+                                <p class="p_descuentos"></p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="contenedor_objeto_producto">
+                    <div class="cont_img_objeto_producto">
+                        <a target="_blank" href="https://www.google.com/maps/dir//BLOQuera+vac/@19.4080717,-99.1526488,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85ce029ba6029b43:0x55ab8dbcadbf0d08!2m2!1d-99.0433675!2d19.3302143">
+                            <img class="img_producto" src="./vista/img/mapa_bloquera.png">
+                        </a>
+                    </div>
+                    <div class="cont_texto_objeto_producto">
+                        <div class="objeto_texto_producto">
+                            <p class="p_titulo_producto">• Cómo llegar</p>
+                        </div>
+                        <div class="objeto_texto_producto">
+                            <p class="p_descripcion_producto">CDMX</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="contenedor_objeto_producto" onclick="mostrarRegistroFlete()">
+                    <div class="cont_img_objeto_producto">
+                        <img class="img_producto" src="./vista/img/unidad_pro_star.png">
+                    </div>
+                    <div class="cont_texto_objeto_producto">
+                        <div class="objeto_texto_producto">
+                            <p class="p_titulo_producto">Fletes</p>
+                        </div>
+                        <div class="objeto_texto_producto">
+                            <p class="p_descripcion_producto">Solicita tu entrega</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="contenedor_ventana" id="registro_flete">
+                    <div class="ventana_secundaria_producto">
+                        
+                        <div class="fila_formulario_fletera" id="fila_titulo_formulario_fletes">
+                            <div class="contenedor_btn_cerrar">
+                                <div class="btn_cerrar" onclick="ocultarRegistroFlete()">
+                                    <img class="img_remove" src="./vista/img/remove.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="p_titulo_formulario">Registro Flete</p>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                            <div class="cont_p_input">
+                                <p class="p_input">Nombre/s: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="text" class="input_formulario" id="nombre_flete">
+                            </div>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                            <div class="cont_p_input">
+                                <p class="p_input">Apellido/s: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="text" class="input_formulario" id="apellido_flete">
+                            </div>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                            
+                            <div class="cont_p_input">
+                                <p class="p_input">Dirección: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="text" class="input_formulario" id="direccion_flete">
+                            </div>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                            <div class="cont_p_input">
+                                <p class="p_input">Empresa: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="text" class="input_formulario" id="empresa_flete">
+                            </div>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                                                        <div class="cont_p_input">
+                                <p class="p_input">Teléfono: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="text" class="input_formulario" id="telefono_flete">
+                            </div>
+                        </div>
+                        <div class="fila_formulario_fletera">
+                                                        <div class="cont_p_input">
+                                <p class="p_input">Correo Electrónico: </p>
+                            </div>
+                            <div class="cont_input_formulario">
+                                <input type="email" class="input_formulario" id="correo_electronico_flete">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor_btn_enviar_formulario">
+                        <div class="btn_enviar_formulario" onclick="registrarFlete()">Enviar</div>
+                    </div>
+
+                </div>
+
+                <div class="contenedor_objeto_producto" onclick="mostrarCatalogo()">
+                    <div class="cont_img_objeto_producto">
+                        <img class="img_producto" src="./vista/img/catalogo.png">
+                    </div>
+                    <div class="cont_texto_objeto_producto">
+                        <div class="objeto_texto_producto">
+                            <p class="p_titulo_producto">Catálogo</p>
+                        </div>
+                        <div class="objeto_texto_producto">
+                            <p class="p_descripcion_producto">Más de 100 bloques diferentes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor_objeto_producto">
+                    <div class="cont_img_objeto_producto">
+                        <a target="_blank" href="https://wa.me/5548192125?text=Hola,%20quiero%20cotizar%20un%20producto.">
+                            <img class="img_producto" src="./vista/img/whatsapp_interface.svg">
+                        </a>
+                    </div>
+                    <div class="cont_texto_objeto_producto">
+                        <div class="objeto_texto_producto">
+                            <p class="p_titulo_producto">Realiza tu pedido</p>
+                        </div>
+                        <div class="objeto_texto_producto">
+                            <p class="p_descripcion_producto">WhatsApp, Email o Facebook</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_metodo_pago">
+                <div class="cuadro_pago">
+                    <div class="contenedor_cuadro_pago_descripcion">
+                        <div class="contenedor_titulo_descripcion_cuadro_pago">
+                            <p class="titulo_forma_pago">Formas de Pago</p>
+                        </div>
+                        <div class="contenedor_titulo_descripcion_cuadro_pago">
+                            <p class="descripcion_forma_pago">Efectivo, depósitos o transferencias</p>    
+                        </div>
+                    </div>
+                    <div class="contenedor_cuadro_pago_metodos">
+                        <div class="contenedor_img_pago_metodo">
+                            <a href="https://www.banorte.com/" target="_blank">
+                                <img class="img_pago_metodo" src="./vista/img/banorte.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor_img_pago_metodo">
+                            <img class="img_pago_metodo" src="./vista/img/efectivo.png">
+                        </div>
+                        <div class="contenedor_img_pago_metodo">
+                            <a target="_blank" href="https://www.banxico.org.mx/servicios/sistema-pagos-electronicos-in001.html">
+                                <img class="img_pago_metodo" src="./vista/img/spei.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="columna_footer">
+                    <div class="texto_footer">
+                        <p class="p_titulo_columa_footer">¿Por qué Bloquera Vac?</p>
+                    </div>
+                    <div class="texto_footer" id="descripcion_footer">
+                        <p class="p_descripcion_columna_footer">En Bloquera VAC, estamos comprometidos en ofrecer productos y soluciones integrales de calidad para la industria de la construcción, cumpliendo con los requisitos aplicables que garanticen la satisfacción de nuestros clientes, mediante personal competente, proveedores confiables y la mejora continua de nuestros procesos que se traduzcan en seguridad, eficiencia y rentabilidad para nuestros clientes y las partes interesadas.</p>
+                    </div>
+                </div>
+                <div class="columna_footer">
+                    <div class="texto_footer">
+                        <p class="p_titulo_columa_footer">Cotizaciones</p>
+                    </div>
+                    <div class="texto_footer">
+                        <p class="p_descripcion_columna_footer">Telefonos: 55-5690-2400 / 55-3053-1859.</p>
+                    </div>
+                    <div class="texto_footer">
+                        <p class="p_titulo_columa_footer">Ubicación</p>
+                    </div>
+                    <div class="texto_footer">
+                        <p class="p_descripcion_columna_footer">Manuel Cañas 150,Col. Desarrollo Urbano Quetzalcóatl, Iztapalapa, 09700 Ciudad de México, CDMX </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cuerpo_contenido" id="cuerpo_contenido_info">
+            <div class="cuerpo_contenedor_animacion">
+                <div class="contenedor_p_animacion">
+                    <p class="p_animación">BLOQUERA</p>
+                    <p class="p_animación"> VAC</p>
+                </div>
+            </div>
+
+            <div class="cuerpo_contenedor_historia">
+                <div class="columna_contenedor_historia">
+                    <div class="objeto_historia">
+                        <div class="contenedor_img_historia">
+                            <img class="img_historia" src="./vista/img/portada.jpg">
+                        </div>
+                        <div class="contenedor_descripción_historia">
+                            <div class="titulo_descripción_historia">
+                                <p class="p_titulo_descripción_historia">NUESTROS INICIOS</p>
+                            </div>
+                            <div class="elemento_descripción_historia">
+                                <p class="p_elemento_descripción_historia">Iniciamos en el año 1978 con una pequeña tabiquera en el pueblo de Santa Cruz, a la fecha somos una de las más importantes y reconocidas, contando ya con 3 plantas y más de 40 años de experiencia conviertiendonos en BLOQUERA VAC. Trabajamos con la mejor calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objeto_historia">
+                        <div class="contenedor_img_historia">
+                            <img class="img_historia" src="./vista/img/portada.jpg">
+                        </div>
+                        <div class="contenedor_descripción_historia">
+                            <div class="titulo_descripción_historia">
+                                <p class="p_titulo_descripción_historia">POLÍTICA DE CALIDAD</p>
+                            </div>
+                            <div class="elemento_descripción_historia">
+                                <p class="p_elemento_descripción_historia">En Bloquera VAC, estamos comprometidos en ofrecer productos y soluciones integrales de calidad para la industria de la construcción, cumpliendo con los requisitos aplicables que garanticen la satisfacción de nuestros clientes, mediante personal competente, proveedores confiables y la mejora continua de nuestros procesos que se traduzcan en seguridad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objeto_historia">
+                        <div class="contenedor_img_historia">
+                            <img class="img_historia" src="./vista/img/portada.jpg">
+                        </div>
+                        <div class="contenedor_descripción_historia">
+                            <div class="titulo_descripción_historia">
+                                <p class="p_titulo_descripción_historia">Aviso de Privacidad</p>
+                            </div>
+                            <div class="elemento_descripción_historia">
+                                <p class="p_elemento_descripción_historia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt neque quas delectus at sequi officiis tempore, recusandae maiores? Fuga doloribus consectetur error obcaecati accusantium rerum dicta culpa! Odit corrupti dignissimos doloribus temporibus doloremque corporis aperiam adipisci expedita dolore placeat. Corporis minus vitae nisi illo inventore vel eius officiis eaque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cuerpo_contenido" id="cuerpo_contenido_catalogo">
+            <div class="contenedor_cuerpo_catalogo_titulo">
+                <div class="contenedor_catalogo_titulo">
+                    <p class="p_catalogo_titulo">Selecciona&nbsp;</p>
+                    <p class="p_catalogo_titulo">la&nbsp;</p>
+                    <p class="p_catalogo_titulo">catergoría</p>
+                </div>
+            </div>
+            <div class="contenedor_cuerpo_catalogo">
+                <div class="contenido_cuerpo_catalogo" id="menu_catalogo">
+                    <div class="vizualizador_catalogo_menu" >
+                        <div class="selector_menu" onclick="mostrarCatalogoTodo()">
+                            <p class="p_selector_menu">Todo</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoTabiconSiete()">
+                            <p class="p_selector_menu">Tabicon del Nº 7</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoTabiconSieteCinco()">
+                            <p class="p_selector_menu">Tabicon del Nº 7.5</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoTabiconNueve()">
+                            <p class="p_selector_menu">Tabicon del Nº 9</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockDiez()">
+                            <p class="p_selector_menu">Block Nº 10</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockOnceCinco()">
+                            <p class="p_selector_menu">Blocks Nº 11.5</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockDoce()">
+                            <p class="p_selector_menu">Block Nº 12</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockHuecoDoce()">
+                            <p class="p_selector_menu">Block Hueco Nº 12</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockHuecoQuince()">
+                            <p class="p_selector_menu">Block Hueco Nº 15</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoBlockQuince()">
+                            <p class="p_selector_menu">Block Nº 15</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoCuadro()">
+                            <p class="p_selector_menu">Cuadrados</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoHexagono()">
+                            <p class="p_selector_menu">Hexagono Nº 6</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoCruz()">
+                            <p class="p_selector_menu">Cruz Tabasco N° 8</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoPlaca()">
+                            <p class="p_selector_menu">Tabique del Nº 6</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoTabiqueRojo()">
+                            <p class="p_selector_menu">Tabique Rojo Nº 11.5</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoAdopasto()">
+                            <p class="p_selector_menu">Adopasto Nº 8</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoAceros()">
+                            <p class="p_selector_menu">Aceros</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoEnvasados()">
+                            <p class="p_selector_menu">Envasados</p>
+                        </div>
+                        <div class="selector_menu" onclick="mostrarCatalogoAgregados()">
+                            <p class="p_selector_menu">Agregados</p>
+                        </div>
+                        </div>
+                </div>
+            <div class="contenido_cuerpo_catalogo" id="visualizador_materiales">
+                    <div class="vizualizador_catalogo">       
+                        <div class="objeto_material" id="objeto_material_conjunto_a">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_a.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon Pesado Nº 7</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 7.5x13.26cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 7.5x13.26cm</p>
+                                    <p class="p_descripcion_material">Peso: 3.60kg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_b">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_b.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon ligero Nº 7</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 7x12x14cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 7x12x14cm</p>
+                                    <p class="p_descripcion_material">Peso: 2.40kg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_c">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_c.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon Pesado del Nº 7.5</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 7.5x13.26cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 7.5x13.26cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_d">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_d.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon Ligero del Nº 7.5</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 7.5x13.26cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 7.5x13.26cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_e">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_e.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon Pesado Nº 9</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 9x13x26cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 9x13x26cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_f">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_f.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabicon Ligero Nº 9</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 9x13x26cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 9x13x26cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_g">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_g.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Ligero Nº 10</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 10x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 10x18x38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_h">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_h.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Pesado Nº 10</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 10x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 10x18x38cm</p>
+                                    <p class="p_descripcion_material">Peso: 11.70kg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_i">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_i.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Pesado Nº 11.5</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 11.5x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 11.5x18x38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_j">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_j.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Ligero Nº 11.5</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 11.5x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 11.5x18x38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_k">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_k.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Ligero  Nº 12</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 12x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 12x18x38cm</p>
+                                    <p class="p_descripcion_material">Peso: 10.25kg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_l">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_l.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Pesado Nº 12</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 12x20x40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 12x18x38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_m">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_m.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Hueco Ligero Nº 12</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:12X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 12X19X39cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_n">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_n.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Hueco Pesado Nº 12</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:12X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 12X19X39cm</p>
+                                    <p class="p_descripcion_material">Peso: 9.84kg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_o">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_o.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Hueco Ligero color Nº 12</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:12X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real:12X19X39cmcm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_p">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_p.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hueco ligero Nº 15</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:15X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 15X19X39cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_q">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_q.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hueco Pesado Nº 15</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:15X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 15X19X39cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_r">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_r.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Ligero Nº 15</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:15X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 15X18X38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_s">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_s.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Block Macizo Pesado Nº 15</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:15X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 15X18X38cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_t">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_t.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Cuadrado Negro</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 20x20x6cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 20x20x6cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_u">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_u.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Cuadrado Gris</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 20x20x6cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 20x20x6cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_v">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_v.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hexagono Rosa Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 23X23X23cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 23X23X23cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_w">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_w.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hexagono Negro Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal: 23X23X23cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 23X23X23cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_x">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_x.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hexagono Gris Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:23X23X23cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 23X23X23cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_y">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_y.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Adoquin en forma de cruz gris</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_z">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_z.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Adoquin en forma de cruz rosa</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_za">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_za.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabique Placa Negro Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:20X40X6cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 20X40X6cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zb">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zb.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabique Placa Rosa Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:20X40X6cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 20X40X6cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zc">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zc.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabique Placa Gris Nº 6</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:20X20X40cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 20X20X40cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zd">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zd.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tabique Rojo  Nº 11.5</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:30x40x8cm</p>
+                                    <p class="p_descripcion_material">Medida Real: 30x40x8cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_ze">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_ze.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Adopasto  Nº 8</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Medida Nominal:30x40x8cm:</p>
+                                    <p class="p_descripcion_material">Medida Real: 30x40x8cm:</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zf">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zf.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Varillas</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Varilla 3/8 HYLSA:</p>
+                                    <p class="p_descripcion_material">-Peso 6.68kg, Tonelada 150pz</p>
+                                    <p class="p_descripcion_material">Varilla 1/2 HYLSA:</p>                                    
+                                    <p class="p_descripcion_material">Peso 11.952kg, Tonelada 84pz</p>                                    
+                                    <p class="p_descripcion_material">Varilla 5/8 HYLSA:</p>                                    
+                                    <p class="p_descripcion_material">Peso 18.72kg, Tonelada 52pz</p>                                    
+                                    <p class="p_descripcion_material">Varilla 1" HYLSA:</p>                                    
+                                    <p class="p_descripcion_material">Peso 47.7kg, Tonelada 21pz</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zg">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zg.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Armex</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA: 10x10x4 </p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">-Largo: 6 Metros</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA: 10x15x4</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">-Largo: 6 Metros</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA:15x25x4 </p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">-Largo: 6 Metros</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA:15x25x4 </p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">-Largo: 6 Metros</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zh">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zh.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Malla electrosoldada</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MODELO: 66-1010</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Ancho: 2.50 Metros</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">-Largo: 40.00 Metros</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Metros C: 100 M²</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zi">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zi.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Anillos</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA: 10x10</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 4 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 10x15</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 7 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 10x30</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 4 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 15x20</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 5 pza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zj">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zj.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Anillos</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">MEDIDA: 10x20</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 5 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 10x25</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 4 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 15x25</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 5 pza</p>
+                                    <p class="p_descripcion_material">MEDIDA: 20x20</p>
+                                    <p class="p_descripcion_material">-Pza. X Kilo: 4 pza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zk">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zk.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Alambron y Alambre</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zl">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zl.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Caja de clavos : 25kg</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zm">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zm.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Cemento Cruz Azul</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Peso Bulto: 50kg</p>
+                                    <p class="p_descripcion_material">Tonelada: 20 Bltos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zn">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zn.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Mortero Cruz Azul</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Peso Bulto: 50kg</p>
+                                    <p class="p_descripcion_material">Tonelada: 20 Bltos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zo">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zo.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Cemento Cruz Azul Blanco</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Peso Bulto: 50kg</p>
+                                    <p class="p_descripcion_material">Tonelada: 20 Bltos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zp">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zp.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Cemento Moctezuma</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Peso Bulto: 50kg</p>
+                                    <p class="p_descripcion_material">Tonelada: 20 Bltos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zq">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zq.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Mortero Moctezuma</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">Peso Bulto: 50kg</p>
+                                    <p class="p_descripcion_material">Tonelada: 20 Bltos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zr">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zr.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Arena</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zs">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zs.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Grava Ligera</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zt">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zt.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Grava Pesada</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zu">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zu.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Hormigón</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objeto_material" id="objeto_material_conjunto_zv">
+                            <div class="contenedor_img_material">
+                                <img class="img_material" src="./vista/img/materiales/material_zv.png">
+                            </div>
+                            <div class="cont_texto_objeto_material">
+                                <div class="objeto_texto_material">
+                                    <p class="p_titulo_material">Tepetzil</p>
+                                </div>
+                                <div class="objeto_texto_material">
+                                    <p class="p_descripcion_material">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!--<div class="contenedor_productos">
+                            <div class="contenedor_objeto_producto" onclick="mostrarDescuentos()">
+                                <a href="#contenedor_ventana_secundaria_descuentos">
+                                <div class="cont_img_objeto_producto">
+                                    <img class="img_producto" src="./vista/img/oferta_block.png">
+                                </div>
+                                </a>
+                                <div class="cont_texto_objeto_producto">
+                                    <div class="objeto_texto_producto">
+                                        <p class="p_titulo_producto">• Descuentos</p>
+                                    </div>
+                                    <div class="objeto_texto_producto">
+                                        <p class="p_descripcion_producto">Por millar y tonelada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor_menu_descuentos"></div>
+</body>
+<script src="./controlador/ejemplo_bloquera.js"></script>
+<script src="./controlador/catalogo.js"></script>
+
+</html>
